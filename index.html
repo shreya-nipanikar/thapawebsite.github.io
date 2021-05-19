@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Illustrations</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Illustrations</h1>
+            <div class="menu"><img src="images/menu.png" onclick="showMenu()"></div>
+            <nav id="navlinks">
+                <div class="close"><img src="images/close.png" onclick="closeMenu()"/></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="main">
+       <div class="rightside">
+           <h1>Welcome to</h1>
+           <p>World's Creative Website!</p>
+           <button type="button">Explore..</button>
+       </div>
+       <div class="leftside">
+           <img src="images/myfav.png" />
+       </div>
+    </div>
+
+        <div class="sidebar">
+            <div class="menuu">
+                <img src="images/menu.png" />
+            </div>
+
+            <div class="sociallinks">
+                <img src="images/fb.png" />
+                <img src="images/ig.png" />
+                <img src="images/tw.png" />
+            </div>
+
+            <div class="usefullinks">
+                <img src="images/share.png" />
+                <img src="images/info.png" />
+            </div>
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("navlinks");
+
+        function closeMenu(){
+            show.style.right="-200px";
+        }
+
+        function showMenu(){
+            show.style.right = "0";
+        }
+    </script>
+</body>
+</html>
